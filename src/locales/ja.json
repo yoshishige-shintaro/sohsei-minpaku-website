@@ -1,0 +1,71 @@
+{
+  "common": {
+    "title": "葛西ホテル & 寿司アートホテル",
+    "description": "東京の魅力を体験する特別な宿泊体験",
+    "navigation": {
+      "home": "ホーム",
+      "kasaiHotel": "葛西ホテル",
+      "sushiArtHotel": "寿司アートホテル",
+      "area": "地域の魅力",
+      "faq": "よくある質問"
+    },
+    "button": {
+      "readMore": "詳細を見る",
+      "bookNow": "予約する",
+      "viewGallery": "写真を見る"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "東京で特別な体験を",
+      "subtitle": "葛西ホテル & 寿司アートホテルへようこそ"
+    },
+    "kasaiHotel": {
+      "title": "葛西ホテル",
+      "subtitle": "広々とした空間で TeamLab やディズニーへのアクセスも抜群",
+      "description": "最大9名宿泊可能な83㎡の広々とした一軒家。無料駐車場完備で、TeamLabやディズニーへのアクセスも便利です。リモートワークスペースや洗濯乾燥機も完備しています。"
+    },
+    "sushiArtHotel": {
+      "title": "寿司アートホテル",
+      "subtitle": "日本藝術大学アーティストによる独自の空間",
+      "description": "日本藝術大学アーティストによる寿司テーマの独自アートが楽しめる空間。イームズのダイニングテーブル等こだわりの内装と、プロジェクター完備で映画鑑賞も可能です。"
+    },
+    "reviews": {
+      "title": "お客様の声",
+      "subtitle": "実際にご宿泊いただいたお客様からの評価"
+    },
+    "booking": {
+      "title": "ご予約はこちら",
+      "subtitle": "Airbnbで簡単予約"
+    }
+  },
+  "hotel": {
+    "overview": "概要",
+    "features": "特徴",
+    "price": "料金",
+    "rooms": "部屋・設備",
+    "reviews": "レビュー",
+    "access": "アクセス・周辺情報",
+    "rules": "ハウスルール",
+    "weekday": "平日",
+    "weekend": "週末・祝日",
+    "perNight": "/ 泊",
+    "attention": "注意事項",
+    "otherHotel": "他の宿泊施設も見る"
+  },
+  "area": {
+    "title": "地域の魅力",
+    "subtitle": "東京の魅力的なスポット",
+    "description": "東京の文化や観光スポットを存分にお楽しみください。"
+  },
+  "faq": {
+    "title": "よくある質問",
+    "subtitle": "ご不明な点はこちらをご確認ください",
+    "contact": "お問い合わせ"
+  },
+  "footer": {
+    "copyright": "© 2025 葛西ホテル & 寿司アートホテル. All Rights Reserved.",
+    "privacyPolicy": "プライバシーポリシー",
+    "contact": "お問い合わせ"
+  }
+}
