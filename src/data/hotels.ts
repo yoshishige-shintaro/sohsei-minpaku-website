@@ -1,0 +1,220 @@
+import { Hotel } from '@/types/hotel';
+import { Home, Car, Wifi, MapPin, User, SquareFootage, Bike, Laptop, Hammer, Thermometer } from 'lucide-react';
+
+export const hotels: Hotel[] = [
+  {
+    id: 'kasai',
+    name: '葛西ホテル',
+    subtitle: '広々とした空間で TeamLab やディズニーへのアクセスも抜群',
+    description: '最大9名宿泊可能な83㎡の広々とした一軒家。無料駐車場完備で、TeamLabやディズニーへのアクセスも便利です。リモートワークスペースや洗濯乾燥機も完備しています。',
+    strengths: [
+      '最大9名宿泊可能な83㎡の広々とした一軒家',
+      '無料駐車場完備',
+      'TeamLabやディズニーへタクシー15分の好アクセス',
+      'リモートワークスペース完備',
+      '洗濯乾燥機完備でファミリー滞在に便利',
+      '高評価レビュー多数「全て完璧」「素晴らしい滞在」'
+    ],
+    weaknesses: [
+      '1980年築の古い建物',
+      '冬場は室内でも寒さを感じる可能性',
+      '階段が狭く急で高齢者に不便',
+      '一部客室のプライバシー性に制限'
+    ],
+    price: {
+      weekday: 25000,
+      weekend: 32000
+    },
+    maxGuests: 9,
+    size: 83,
+    parking: true,
+    features: [
+      {
+        icon: 'User',
+        title: '最大9名まで宿泊可能',
+        description: 'ご家族やグループでもゆったりとお過ごしいただけます。'
+      },
+      {
+        icon: 'SquareFootage',
+        title: '広々とした83㎡の空間',
+        description: '一軒家タイプで、リビングも広々としています。'
+      },
+      {
+        icon: 'Car',
+        title: '無料駐車場完備',
+        description: '車でのアクセスも便利です。'
+      },
+      {
+        icon: 'Laptop',
+        title: 'リモートワークスペース',
+        description: '仕事をしながらの滞在も快適です。'
+      }
+    ],
+    amenities: [
+      'Wi-Fi',
+      'エアコン',
+      'テレビ',
+      '冷蔵庫',
+      '電子レンジ',
+      'IHクッキングヒーター',
+      '洗濯乾燥機',
+      'バスタオル・フェイスタオル',
+      'シャンプー・コンディショナー・ボディソープ',
+      '歯ブラシ'
+    ],
+    images: [
+      { src: '/images/kasai/exterior.jpg', alt: '葛西ホテル外観' },
+      { src: '/images/kasai/living.jpg', alt: 'リビングルーム' },
+      { src: '/images/kasai/bedroom1.jpg', alt: '寝室1' },
+      { src: '/images/kasai/bedroom2.jpg', alt: '寝室2' },
+      { src: '/images/kasai/kitchen.jpg', alt: 'キッチン' },
+      { src: '/images/kasai/bathroom.jpg', alt: '浴室' }
+    ],
+    location: {
+      address: '東京都江戸川区葛西',
+      mapUrl: 'https://maps.google.com/maps?q=東京都江戸川区葛西',
+      nearbySpots: [
+        { name: 'チームラボプラネッツ', distance: '約4km', transportMethod: 'タクシーで15分' },
+        { name: '東京ディズニーリゾート', distance: '約5km', transportMethod: 'タクシーで15分' },
+        { name: '葛西臨海公園', distance: '約2km', transportMethod: '徒歩25分・自転車で10分' },
+        { name: '葛西駅', distance: '約800m', transportMethod: '徒歩10分' }
+      ]
+    },
+    rules: [
+      '室内は禁煙です',
+      '22時以降は騒音にご注意ください',
+      'ペット不可',
+      'パーティー・イベント不可',
+      'チェックイン: 15:00〜20:00',
+      'チェックアウト: 〜10:00'
+    ],
+    reviews: [
+      {
+        author: '田中さん',
+        date: '2024年3月',
+        rating: 5,
+        text: '家族旅行で利用しました。とても広く、快適に過ごせました。ディズニーへのアクセスも良く、また利用したいです。'
+      },
+      {
+        author: '佐藤さん',
+        date: '2024年2月',
+        rating: 4,
+        text: 'チームラボへ行くために宿泊しました。古い建物ですが、清潔に保たれていて居心地が良かったです。冬場は少し寒く感じることがありました。'
+      },
+      {
+        author: '鈴木さん',
+        date: '2024年1月',
+        rating: 5,
+        text: '全て完璧でした。駐車場があるのも助かりました。階段が少し急なので、小さなお子さんや高齢の方は注意が必要かもしれません。'
+      }
+    ],
+    airbnbUrl: 'https://www.airbnb.com/rooms/example-kasai'
+  },
+  {
+    id: 'sushi-art',
+    name: '寿司アートホテル',
+    subtitle: '日本藝術大学アーティストによる独自の空間',
+    description: '日本藝術大学アーティストによる寿司テーマの独自アートが楽しめる空間。イームズのダイニングテーブル等こだわりの内装と、プロジェクター完備で映画鑑賞も可能です。',
+    strengths: [
+      '日本藝術大学アーティストによる寿司テーマの独自アート',
+      'イームズのダイニングテーブル等こだわりの内装',
+      'プロジェクター完備で映画鑑賞可能',
+      '「広く清潔」「素晴らしい」との高評価多数',
+      '地元の雰囲気が楽しめる下町ロケーション'
+    ],
+    weaknesses: [
+      '53㎡と比較的小さめ',
+      '最大5名までの宿泊',
+      '駐車場なし',
+      'TeamLabやディズニーまでやや距離がある'
+    ],
+    price: {
+      weekday: 18000,
+      weekend: 25000
+    },
+    maxGuests: 5,
+    size: 53,
+    parking: false,
+    features: [
+      {
+        icon: 'User',
+        title: '最大5名まで宿泊可能',
+        description: '少人数でのご滞在に最適です。'
+      },
+      {
+        icon: 'SquareFootage',
+        title: 'コンパクトな53㎡の空間',
+        description: '効率的に配置された家具で快適に過ごせます。'
+      },
+      {
+        icon: 'Home',
+        title: 'アート空間',
+        description: '寿司をテーマにした独自のアートが楽しめる空間です。'
+      },
+      {
+        icon: 'Laptop',
+        title: 'プロジェクター完備',
+        description: '映画鑑賞にぴったりです。'
+      }
+    ],
+    amenities: [
+      'Wi-Fi',
+      'エアコン',
+      'テレビ',
+      'プロジェクター',
+      '冷蔵庫',
+      '電子レンジ',
+      'IHクッキングヒーター',
+      'バスタオル・フェイスタオル',
+      'シャンプー・コンディショナー・ボディソープ',
+      '歯ブラシ'
+    ],
+    images: [
+      { src: '/images/sushi-art/exterior.jpg', alt: '寿司アートホテル外観' },
+      { src: '/images/sushi-art/living.jpg', alt: 'リビングルーム' },
+      { src: '/images/sushi-art/art.jpg', alt: '寿司アート' },
+      { src: '/images/sushi-art/bedroom.jpg', alt: '寝室' },
+      { src: '/images/sushi-art/kitchen.jpg', alt: 'キッチン' },
+      { src: '/images/sushi-art/bathroom.jpg', alt: '浴室' }
+    ],
+    location: {
+      address: '東京都墨田区',
+      mapUrl: 'https://maps.google.com/maps?q=東京都墨田区',
+      nearbySpots: [
+        { name: '東京スカイツリー', distance: '約1.5km', transportMethod: '徒歩20分' },
+        { name: '浅草寺', distance: '約2km', transportMethod: '電車で15分' },
+        { name: '隅田川', distance: '約500m', transportMethod: '徒歩7分' },
+        { name: '地下鉄駅', distance: '約400m', transportMethod: '徒歩5分' }
+      ]
+    },
+    rules: [
+      '室内は禁煙です',
+      '22時以降は騒音にご注意ください',
+      'ペット不可',
+      'パーティー・イベント不可',
+      'チェックイン: 15:00〜20:00',
+      'チェックアウト: 〜10:00'
+    ],
+    reviews: [
+      {
+        author: '山田さん',
+        date: '2024年4月',
+        rating: 5,
+        text: '寿司アートが素晴らしかったです！部屋も清潔で、プロジェクターで映画を見ることができて楽しかったです。'
+      },
+      {
+        author: '伊藤さん',
+        date: '2024年3月',
+        rating: 4,
+        text: 'アーティスティックな空間で、とても居心地が良かったです。駐車場がないのが少し不便でした。'
+      },
+      {
+        author: '佐々木さん',
+        date: '2024年2月',
+        rating: 5,
+        text: '立地が良く、周辺の下町散策も楽しめました。イームズのテーブルなど、こだわりの内装も素敵でした。'
+      }
+    ],
+    airbnbUrl: 'https://www.airbnb.com/rooms/example-sushi-art'
+  }
+];
