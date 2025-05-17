@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --deep-blue: #1D3557;
+  --ink: #1A1A1A;
+  --sakura: #FAD2E1;
+  --wakatake: #88BDBC;
+  --kinari: #F5F2E9;
+}
+
+@layer base {
+  html {
+    @apply bg-kinari font-sans text-ink;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl font-bold;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl font-bold;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl font-semibold;
+  }
+  
+  a {
+    @apply text-deep-blue hover:text-wakatake transition-colors duration-300;
+  }
+  
+  p {
+    @apply mb-4 leading-relaxed;
+  }
+  
+  section {
+    @apply py-12 md:py-16;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+  
+  .btn {
+    @apply px-6 py-3 font-medium rounded-md transition-all duration-300 inline-block;
+  }
+  
+  .btn-primary {
+    @apply bg-deep-blue text-white hover:bg-opacity-90;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-deep-blue border border-deep-blue hover:bg-deep-blue hover:text-white;
+  }
+  
+  .btn-accent {
+    @apply bg-wakatake text-white hover:bg-opacity-90;
+  }
+  
+  .section-title {
+    @apply text-center mb-12;
+  }
+  
+  .section-title h2 {
+    @apply mb-2;
+  }
+  
+  .section-title p {
+    @apply text-lg text-gray-600;
+  }
+}
