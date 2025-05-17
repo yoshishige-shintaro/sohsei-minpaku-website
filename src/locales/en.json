@@ -1,0 +1,71 @@
+{
+  "common": {
+    "title": "Kasai Hotel & Sushi Art Hotel",
+    "description": "Experience the charm of Tokyo with a special stay",
+    "navigation": {
+      "home": "Home",
+      "kasaiHotel": "Kasai Hotel",
+      "sushiArtHotel": "Sushi Art Hotel",
+      "area": "Local Area",
+      "faq": "FAQ"
+    },
+    "button": {
+      "readMore": "Read More",
+      "bookNow": "Book Now",
+      "viewGallery": "View Gallery"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "A Special Experience in Tokyo",
+      "subtitle": "Welcome to Kasai Hotel & Sushi Art Hotel"
+    },
+    "kasaiHotel": {
+      "title": "Kasai Hotel",
+      "subtitle": "Spacious accommodation with great access to TeamLab and Disney",
+      "description": "A spacious 83㎡ house accommodating up to 9 guests. Free parking available, with convenient access to TeamLab and Disney. Remote work space and washer/dryer equipped."
+    },
+    "sushiArtHotel": {
+      "title": "Sushi Art Hotel",
+      "subtitle": "Unique space designed by Japan Art University artists",
+      "description": "Enjoy the unique sushi-themed art created by Japan Art University artists. Featuring carefully selected interior including Eames dining table, and a projector for movie viewing."
+    },
+    "reviews": {
+      "title": "Guest Reviews",
+      "subtitle": "Feedback from our actual guests"
+    },
+    "booking": {
+      "title": "Book Your Stay",
+      "subtitle": "Easy booking with Airbnb"
+    }
+  },
+  "hotel": {
+    "overview": "Overview",
+    "features": "Features",
+    "price": "Price",
+    "rooms": "Rooms & Amenities",
+    "reviews": "Reviews",
+    "access": "Access & Surroundings",
+    "rules": "House Rules",
+    "weekday": "Weekday",
+    "weekend": "Weekend & Holiday",
+    "perNight": "/ night",
+    "attention": "Notes",
+    "otherHotel": "See Our Other Accommodation"
+  },
+  "area": {
+    "title": "Local Area",
+    "subtitle": "Attractive spots in Tokyo",
+    "description": "Enjoy the culture and tourist attractions of Tokyo to the fullest."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Please check here for any concerns",
+    "contact": "Contact Us"
+  },
+  "footer": {
+    "copyright": "© 2025 Kasai Hotel & Sushi Art Hotel. All Rights Reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "contact": "Contact Us"
+  }
+}
