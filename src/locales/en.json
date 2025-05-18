@@ -18,17 +18,20 @@
   "home": {
     "hero": {
       "title": "A Special Experience in Tokyo",
-      "subtitle": "Welcome to Kasai Hotel & Sushi Art Hotel"
+      "subtitle": "Welcome to Kasai Hotel & Sushi Art Hotel",
+      "readMore": "Read More"
     },
     "kasaiHotel": {
       "title": "Kasai Hotel",
       "subtitle": "Spacious accommodation with great access to TeamLab and Disney",
-      "description": "A spacious 83㎡ house accommodating up to 9 guests. Free parking available, with convenient access to TeamLab and Disney. Remote work space and washer/dryer equipped."
+      "description": "A spacious 83㎡ house accommodating up to 9 guests. Free parking available, with convenient access to TeamLab and Disney. Remote work space and washer/dryer equipped.",
+      "readMore": "Read More"
     },
     "sushiArtHotel": {
       "title": "Sushi Art Hotel",
       "subtitle": "Unique space designed by Japan Art University artists",
-      "description": "Enjoy the unique sushi-themed art created by Japan Art University artists. Featuring carefully selected interior including Eames dining table, and a projector for movie viewing."
+      "description": "Enjoy the unique sushi-themed art created by Japan Art University artists. Featuring carefully selected interior including Eames dining table, and a projector for movie viewing.",
+      "readMore": "Read More"
     },
     "reviews": {
       "title": "Guest Reviews",

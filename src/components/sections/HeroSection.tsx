@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import { Locale } from '@/lib/i18n';
-import Container from '@/components/ui/Container';
+import Container from "@/components/ui/Container";
+import { Locale } from "@/lib/i18n";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
 type HeroSlide = {
   id: number;
@@ -15,18 +15,18 @@ type HeroSlide = {
 const heroSlides: HeroSlide[] = [
   {
     id: 1,
-    imageSrc: '/images/hero/hero-1.jpg',
-    alt: '葛西ホテル外観',
+    imageSrc: "/images/hero/hero-1.jpg",
+    alt: "葛西ホテル外観",
   },
   {
     id: 2,
-    imageSrc: '/images/hero/hero-2.jpg',
-    alt: '寿司アートホテル',
+    imageSrc: "/images/hero/hero-2.jpg",
+    alt: "寿司アートホテル",
   },
   {
     id: 3,
-    imageSrc: '/images/hero/hero-3.jpg',
-    alt: 'リビングルーム',
+    imageSrc: "/images/hero/hero-3.jpg",
+    alt: "リビングルーム",
   },
 ];
 
@@ -35,6 +35,7 @@ type Props = {
   content: {
     title: string;
     subtitle: string;
+    readMore: string;
   };
 };
 
@@ -59,7 +60,7 @@ const HeroSection = ({ locale, content }: Props) => {
       transition: {
         delay: i * 0.3 + 0.3,
         duration: 0.8,
-        ease: 'easeOut',
+        ease: "easeOut",
       },
     }),
   };
@@ -72,7 +73,7 @@ const HeroSection = ({ locale, content }: Props) => {
           <div
             key={slide.id}
             className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentSlide ? 'opacity-100' : 'opacity-0'
+              index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
           >
             <div className="absolute inset-0 bg-black bg-opacity-30 z-10" />
@@ -108,17 +109,12 @@ const HeroSection = ({ locale, content }: Props) => {
         >
           {content.subtitle}
         </motion.p>
-        <motion.div
-          custom={2}
-          initial="hidden"
-          animate="visible"
-          variants={textVariants}
-        >
+        <motion.div custom={2} initial="hidden" animate="visible" variants={textVariants}>
           <a
             href="#kasai"
             className="bg-white text-deep-blue hover:bg-opacity-90 transition duration-300 py-3 px-8 rounded-md font-medium"
           >
-            詳しく見る
+            {content.readMore}
           </a>
         </motion.div>
       </Container>
@@ -130,7 +126,7 @@ const HeroSection = ({ locale, content }: Props) => {
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`w-3 h-3 rounded-full ${
-              index === currentSlide ? 'bg-white' : 'bg-white bg-opacity-50'
+              index === currentSlide ? "bg-white" : "bg-white bg-opacity-50"
             }`}
             aria-label={`スライド ${index + 1}に移動`}
           />
