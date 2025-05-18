@@ -115,7 +115,7 @@ const HeroSection = ({ locale, content }: Props) => {
           variants={textVariants}
         >
           <a
-            href="#hotels"
+            href="#kasai"
             className="bg-white text-deep-blue hover:bg-opacity-90 transition duration-300 py-3 px-8 rounded-md font-medium"
           >
             詳しく見る
