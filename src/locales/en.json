@@ -18,20 +18,17 @@
   "home": {
     "hero": {
       "title": "A Special Experience in Tokyo",
-      "subtitle": "Welcome to Kasai Hotel & Sushi Art Hotel",
-      "readMore": "Read More"
+      "subtitle": "Welcome to Kasai Hotel & Sushi Art Hotel"
     },
     "kasaiHotel": {
       "title": "Kasai Hotel",
       "subtitle": "Spacious accommodation with great access to TeamLab and Disney",
-      "description": "A spacious 83㎡ house accommodating up to 9 guests. Free parking available, with convenient access to TeamLab and Disney. Remote work space and washer/dryer equipped.",
-      "readMore": "Read More"
+      "description": "A spacious 83㎡ house accommodating up to 9 guests. Free parking available, with convenient access to TeamLab and Disney. Remote work space and washer/dryer equipped."
     },
     "sushiArtHotel": {
       "title": "Sushi Art Hotel",
       "subtitle": "Unique space designed by Japan Art University artists",
-      "description": "Enjoy the unique sushi-themed art created by Japan Art University artists. Featuring carefully selected interior including Eames dining table, and a projector for movie viewing.",
-      "readMore": "Read More"
+      "description": "Enjoy the unique sushi-themed art created by Japan Art University artists. Featuring carefully selected interior including Eames dining table, and a projector for movie viewing."
     },
     "reviews": {
       "title": "Guest Reviews",
@@ -59,7 +56,28 @@
   "area": {
     "title": "Local Area",
     "subtitle": "Attractive spots in Tokyo",
-    "description": "Enjoy the culture and tourist attractions of Tokyo to the fullest."
+    "description": "Enjoy the culture and tourist attractions of Tokyo to the fullest.",
+    "hero": {
+      "title": "Discover Tokyo's Charm",
+      "subtitle": "A treasure trove of culture, gourmet, and entertainment",
+      "description": "Enjoy unforgettable experiences in Tokyo, where tradition and modernity blend together."
+    },
+    "touristSpots": {
+      "title": "Popular Tourist Spots",
+      "subtitle": "Must-see attractions in Tokyo"
+    },
+    "culturalActivities": {
+      "title": "Cultural Experiences & Activities",
+      "subtitle": "Experience traditional Japanese culture"
+    },
+    "foodShopping": {
+      "title": "Gourmet & Shopping",
+      "subtitle": "Tokyo's delicious food and wonderful shopping"
+    },
+    "seasonal": {
+      "title": "Seasonal Recommendations",
+      "subtitle": "Enjoy Tokyo through the four seasons"
+    }
   },
   "faq": {
     "title": "Frequently Asked Questions",
