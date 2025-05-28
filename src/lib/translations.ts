@@ -5,11 +5,9 @@ export async function getTranslations(locale: Locale) {
   try {
     // 翻訳ファイルの動的インポート
     const translations = await import(`@/locales/${locale}.json`);
-    console.log(translations.default);
 
     return translations.default;
   } catch (error) {
-    console.error(`Failed to load translations for locale: ${locale}`, error);
     // エラー時はからのオブジェクトを返す
     return {};
   }

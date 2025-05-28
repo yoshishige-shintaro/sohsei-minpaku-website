@@ -138,12 +138,12 @@ export const hotels: Hotel[] = [
     parking: false,
     features: [
       {
-        icon: "User",
+        icon: "Users",
         title: "最大5名まで宿泊可能",
         description: "少人数でのご滞在に最適です。",
       },
       {
-        icon: "SquareFootage",
+        icon: "LandPlot",
         title: "コンパクトな53㎡の空間",
         description: "効率的に配置された家具で快適に過ごせます。",
       },
