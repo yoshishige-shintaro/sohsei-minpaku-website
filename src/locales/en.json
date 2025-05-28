@@ -82,7 +82,138 @@
   "faq": {
     "title": "Frequently Asked Questions",
     "subtitle": "Please check here for any concerns",
-    "contact": "Contact Us"
+    "contact": "Contact Us",
+    "categories": {
+      "all": "All",
+      "booking": "Booking & Check-in",
+      "facilities": "Facilities & Equipment",
+      "access": "Access & Transportation",
+      "pricing": "Pricing & Payment",
+      "rules": "House Rules",
+      "other": "Other"
+    },
+    "items": [
+      {
+        "id": "checkin-time",
+        "category": "booking",
+        "question": "What are the check-in and check-out times?",
+        "answer": "Check-in: 4:00 PM onwards\nCheck-out: 10:00 AM\n\nIf you would like to check in outside of these hours, please contact us in advance. We will accommodate your request whenever possible."
+      },
+      {
+        "id": "id-verification",
+        "category": "booking",
+        "question": "Is ID verification required?",
+        "answer": "Yes, according to the Residential Accommodation Business Act, we require ID verification from all guests.\n\n【International Guests】\n・Photo showing the entire passport\n・Photo with passport face page and guest together\n\n【Domestic Guests】\n・Photo ID (driver's license, etc.)\n\nIf you cannot provide this information, we may have to decline your stay."
+      },
+      {
+        "id": "luggage-storage",
+        "category": "booking",
+        "question": "Can I store luggage after check-out?",
+        "answer": "We apologize, but we currently do not offer luggage storage after check-out.\n\nPlease use the coin lockers at the nearest stations (Funabori Station or Koiwa Station). Both stations have coin lockers available in the station building."
+      },
+      {
+        "id": "stairs",
+        "category": "facilities",
+        "question": "Tell me about the stairs",
+        "answer": "Both properties are two-story buildings with somewhat steep stairs to the second floor.\n\nGuests with mobility concerns or traveling with small children should take their time going up and down. Handrails are available for your use.\n\nIf you have concerns about using the stairs, please contact us in advance."
+      },
+      {
+        "id": "winter-cold",
+        "category": "facilities",
+        "question": "What about heating in winter?",
+        "answer": "Each room is equipped with air conditioning, but as these are older Japanese wooden houses, they can feel cold in winter.\n\nPlease use the heating adequately and dress warmly. If you need additional blankets, please let us know."
+      },
+      {
+        "id": "laundry",
+        "category": "facilities",
+        "question": "How do I use the washing machine and dryer?",
+        "answer": "【Kasai Hotel】Fully automatic drum-type washer/dryer\n【Sushi Art Hotel】Fully automatic washing machine\n\nWe will explain how to use them during check-in. House manuals are also available at each property.\n\nPlease use the provided detergent."
+      },
+      {
+        "id": "wifi-projector",
+        "category": "facilities",
+        "question": "Can I use Wi-Fi and the projector?",
+        "answer": "Yes, both properties offer free Wi-Fi and projectors (Alladin).\n\nWi-Fi passwords and projector usage instructions will be provided during check-in. Perfect for remote work or movie viewing."
+      },
+      {
+        "id": "station-distance",
+        "category": "access",
+        "question": "How far are the nearest stations?",
+        "answer": "【Kasai Hotel】13-minute walk from Funabori Station\n【Sushi Art Hotel】13-minute walk from Koiwa Station\n\nBoth stations provide direct access to Shinjuku and Akihabara via the Shinjuku Line. The station areas have supermarkets, convenience stores, and restaurants."
+      },
+      {
+        "id": "parking",
+        "category": "access",
+        "question": "Is parking available?",
+        "answer": "【Kasai Hotel】Free parking for one car\n【Sushi Art Hotel】Paid parking available\n\nPlease let us know in advance if you need parking. For Sushi Art Hotel parking fees, we will provide details when you inquire."
+      },
+      {
+        "id": "teamlab-disney",
+        "category": "access",
+        "question": "How do I get to TeamLab and Disneyland?",
+        "answer": "【TeamLab】\n・About 15 minutes by taxi from Kasai Hotel\n・About 20 minutes by taxi from Sushi Art Hotel\n\n【Tokyo Disney Resort】\n・About 15 minutes by taxi from Kasai Hotel\n・About 25 minutes by taxi from Sushi Art Hotel\n\nWe will also provide public transportation directions during check-in."
+      },
+      {
+        "id": "airport-access",
+        "category": "access",
+        "question": "How do I get from the airports?",
+        "answer": "【From Haneda Airport】\n・50 minutes to Funabori Station, 55 minutes to Koiwa Station\n・40 minutes by direct bus to Kasai Station, then 10 minutes by taxi\n\n【From Narita Airport】\n・70 minutes to both Funabori and Koiwa Stations\n・60 minutes by direct bus to Kasai Station, then 10 minutes by taxi\n\nWhen you have lots of luggage, taking a taxi from Kasai Station is convenient."
+      },
+      {
+        "id": "pricing",
+        "category": "pricing",
+        "question": "What are the accommodation rates?",
+        "answer": "Rates vary by season and day of the week. For detailed pricing, please check each listing on Airbnb.\n\n【Kasai Hotel】Up to 9 guests\n【Sushi Art Hotel】Up to 5 guests\n\nRates include basic facilities and amenities."
+      },
+      {
+        "id": "additional-fees",
+        "category": "pricing",
+        "question": "Are there additional fees?",
+        "answer": "Generally, there are no additional fees beyond the accommodation rate.\n\nHowever, additional fees apply in the following cases:\n・Excessive cleaning required: cleaning fee\n・Vomit cleanup required: ¥50,000\n・Damage to furniture or equipment\n・House rule violations: ¥30,000 response fee\n\nPlease use the property with care."
+      },
+      {
+        "id": "no-smoking-party",
+        "category": "rules",
+        "question": "About no-smoking and no-party policies",
+        "answer": "Both properties are completely non-smoking indoors. If you need to smoke, please do so outside the building.\n\nParties and loud activities are strictly prohibited. If police complaints or neighbor complaints occur, immediate eviction and a ¥30,000 response fee will apply.\n\nThank you for helping maintain a quiet, comfortable environment."
+      },
+      {
+        "id": "quiet-hours",
+        "category": "rules",
+        "question": "Are there noise restrictions?",
+        "answer": "Please be especially quiet after 8:00 PM to avoid disturbing neighbors.\n\nAs these are located in residential areas, please avoid loud conversations or music. Thank you for your cooperation in ensuring everyone's comfort."
+      },
+      {
+        "id": "pets",
+        "category": "rules",
+        "question": "Are pets allowed?",
+        "answer": "Yes, both properties welcome pets.\n\nPlease notify us in advance if bringing pets. Additional fees may apply for any damage or cleaning required due to pets.\n\nPlease be considerate of neighbors."
+      },
+      {
+        "id": "guest-limit",
+        "category": "rules",
+        "question": "Are there guest limits?",
+        "answer": "【Kasai Hotel】Maximum 9 guests\n【Sushi Art Hotel】Maximum 5 guests\n\nOnly registered guests may stay or visit. If occupancy exceeds the reservation, additional fees or eviction may apply."
+      },
+      {
+        "id": "nearby-facilities",
+        "category": "other",
+        "question": "What facilities are nearby?",
+        "answer": "Both properties have excellent facilities near the stations:\n\n・Supermarkets\n・Convenience stores\n・100-yen shops (Seria, Can★Do, Daiso)\n・Many restaurants and izakaya\n・Pharmacies and clinics\n\nEverything you need for daily life is within walking distance."
+      },
+      {
+        "id": "emergency",
+        "category": "other",
+        "question": "How do I contact you in emergencies?",
+        "answer": "For emergencies, please contact us via:\n\n1. Airbnb messaging\n2. Emergency contact number (provided at check-in)\n\nFor medical emergencies, call 119 (ambulance) first, then contact the host when possible."
+      },
+      {
+        "id": "amenities",
+        "category": "other",
+        "question": "What amenities are provided?",
+        "answer": "We provide the following amenities:\n\n【Basic Amenities】\n・Bath towels, face towels\n・Shampoo, conditioner, body wash\n・Hair dryer\n・Wi-Fi\n\n【Kitchen Items】\n・Complete dish set, cooking utensils, microwave, kettle\n\n【Please Bring】\n・Toothbrush, razor\n・Other personal toiletries"
+      }
+    ]
   },
   "footer": {
     "copyright": "© 2025 Kasai Hotel & Sushi Art Hotel. All Rights Reserved.",
