@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
-import { usePathname } from 'next/navigation';
-import { Locale } from '@/lib/i18n';
-import LanguageSwitcher from './LanguageSwitcher';
+import { Locale } from "@/lib/i18n";
+import { Menu, X } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 type NavItem = {
   href: string;
@@ -31,7 +31,7 @@ export const Header = ({ locale, nav }: Props) => {
     { href: `/${locale}`, label: nav.home },
     { href: `/${locale}/kasai-hotel`, label: nav.kasaiHotel },
     { href: `/${locale}/sushi-art-hotel`, label: nav.sushiArtHotel },
-    { href: `/${locale}/area`, label: nav.area },
+    // { href: `/${locale}/area`, label: nav.area },
     { href: `/${locale}/faq`, label: nav.faq },
   ];
 
@@ -64,8 +64,8 @@ export const Header = ({ locale, nav }: Props) => {
               href={item.href}
               className={`text-sm font-medium transition-colors duration-300 ${
                 isActive(item.href)
-                  ? 'text-deep-blue font-bold'
-                  : 'text-gray-600 hover:text-deep-blue'
+                  ? "text-deep-blue font-bold"
+                  : "text-gray-600 hover:text-deep-blue"
               }`}
             >
               {item.label}
@@ -78,7 +78,7 @@ export const Header = ({ locale, nav }: Props) => {
         <button
           className="md:hidden text-deep-blue"
           onClick={toggleMenu}
-          aria-label={isMenuOpen ? '閉じる' : 'メニューを開く'}
+          aria-label={isMenuOpen ? "閉じる" : "メニューを開く"}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -94,8 +94,8 @@ export const Header = ({ locale, nav }: Props) => {
                 href={item.href}
                 className={`text-sm py-2 px-3 rounded font-medium transition-colors duration-300 ${
                   isActive(item.href)
-                    ? 'bg-kinari text-deep-blue font-bold'
-                    : 'text-gray-600 hover:text-deep-blue hover:bg-gray-100'
+                    ? "bg-kinari text-deep-blue font-bold"
+                    : "text-gray-600 hover:text-deep-blue hover:bg-gray-100"
                 }`}
                 onClick={closeMenu}
               >

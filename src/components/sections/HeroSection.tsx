@@ -4,6 +4,7 @@ import Container from "@/components/ui/Container";
 import { Locale } from "@/lib/i18n";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 type HeroSlide = {
@@ -110,12 +111,12 @@ const HeroSection = ({ locale, content }: Props) => {
           {content.subtitle}
         </motion.p>
         <motion.div custom={2} initial="hidden" animate="visible" variants={textVariants}>
-          <a
+          <Link
             href="#kasai"
             className="bg-white text-deep-blue hover:bg-opacity-90 transition duration-300 py-3 px-8 rounded-md font-medium"
           >
             {content.readMore}
-          </a>
+          </Link>
         </motion.div>
       </Container>
 
