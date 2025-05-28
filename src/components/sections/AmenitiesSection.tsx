@@ -1,21 +1,22 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { Hotel } from '@/types/hotel';
-import Container from '@/components/ui/Container';
-import SectionTitle from '@/components/ui/SectionTitle';
-import { 
-  Wifi, 
-  Thermometer, 
-  Tv, 
-  RefrigeratorIcon, 
-  Kitchen, 
+import Container from "@/components/ui/Container";
+import SectionTitle from "@/components/ui/SectionTitle";
+import { Hotel } from "@/types/hotel";
+import { motion } from "framer-motion";
+import {
   Bath,
   BedDouble,
+  CookingPot,
+  Microwave,
+  RefrigeratorIcon,
   ShowerHead,
+  Thermometer,
+  Tv,
   Utensils,
-  Waves
-} from 'lucide-react';
+  Waves,
+  Wifi,
+} from "lucide-react";
 
 type Props = {
   hotel: Hotel;
@@ -24,17 +25,17 @@ type Props = {
 
 // アイコンのマッピング
 const amenityIconMap: Record<string, JSX.Element> = {
-  'Wi-Fi': <Wifi size={20} />,
-  'エアコン': <Thermometer size={20} />,
-  'テレビ': <Tv size={20} />,
-  '冷蔵庫': <RefrigeratorIcon size={20} />,
-  '電子レンジ': <Kitchen size={20} />,
-  'IHクッキングヒーター': <Kitchen size={20} />,
-  '洗濯乾燥機': <Waves size={20} />,
-  'バスタオル・フェイスタオル': <Bath size={20} />,
-  'シャンプー・コンディショナー・ボディソープ': <ShowerHead size={20} />,
-  '歯ブラシ': <Utensils size={20} />,
-  'プロジェクター': <Tv size={20} />,
+  "Wi-Fi": <Wifi size={20} />,
+  エアコン: <Thermometer size={20} />,
+  テレビ: <Tv size={20} />,
+  冷蔵庫: <RefrigeratorIcon size={20} />,
+  電子レンジ: <Microwave size={20} />,
+  IHクッキングヒーター: <CookingPot size={20} />,
+  洗濯乾燥機: <Waves size={20} />,
+  "バスタオル・フェイスタオル": <Bath size={20} />,
+  "シャンプー・コンディショナー・ボディソープ": <ShowerHead size={20} />,
+  歯ブラシ: <Utensils size={20} />,
+  プロジェクター: <Tv size={20} />,
 };
 
 const AmenitiesSection = ({ hotel, title }: Props) => {
@@ -83,28 +84,22 @@ const AmenitiesSection = ({ hotel, title }: Props) => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex items-center">
                 <BedDouble className="text-wakatake mr-2" size={20} />
-                <span className="text-gray-700">
-                  広さ: {hotel.size}㎡
-                </span>
+                <span className="text-gray-700">広さ: {hotel.size}㎡</span>
               </div>
               <div className="flex items-center">
                 <BedDouble className="text-wakatake mr-2" size={20} />
-                <span className="text-gray-700">
-                  最大宿泊人数: {hotel.maxGuests}名
-                </span>
+                <span className="text-gray-700">最大宿泊人数: {hotel.maxGuests}名</span>
               </div>
               {/* ホテルごとの部屋構成情報はデータに含めるべき */}
               <div className="flex items-center">
                 <BedDouble className="text-wakatake mr-2" size={20} />
                 <span className="text-gray-700">
-                  ベッドルーム: {hotel.id === 'kasai' ? '3部屋' : '2部屋'}
+                  ベッドルーム: {hotel.id === "kasai" ? "3部屋" : "2部屋"}
                 </span>
               </div>
               <div className="flex items-center">
                 <Bath className="text-wakatake mr-2" size={20} />
-                <span className="text-gray-700">
-                  バスルーム: 1室
-                </span>
+                <span className="text-gray-700">バスルーム: 1室</span>
               </div>
             </div>
           </motion.div>
@@ -117,14 +112,10 @@ const AmenitiesSection = ({ hotel, title }: Props) => {
             <h3 className="text-xl font-medium mb-6 text-deep-blue border-b border-gray-200 pb-2">
               アメニティ・設備
             </h3>
-            
+
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {hotel.amenities.map((amenity, index) => (
-                <motion.div
-                  key={index}
-                  variants={itemVariants}
-                  className="flex items-center"
-                >
+                <motion.div key={index} variants={itemVariants} className="flex items-center">
                   <span className="text-wakatake mr-2">
                     {amenityIconMap[amenity] || <Utensils size={20} />}
                   </span>
@@ -148,9 +139,9 @@ const AmenitiesSection = ({ hotel, title }: Props) => {
               <li>パーティーやイベントの開催はご遠慮ください</li>
               <li>チェックイン前・チェックアウト後の荷物預かりは対応しておりません</li>
               <li>
-                {hotel.id === 'kasai' 
-                  ? '駐車場は1台分無料でご利用いただけます（事前予約制）' 
-                  : '駐車場はございません。近隣のコインパーキングをご利用ください'}
+                {hotel.id === "kasai"
+                  ? "駐車場は1台分無料でご利用いただけます（事前予約制）"
+                  : "駐車場はございません。近隣のコインパーキングをご利用ください"}
               </li>
             </ul>
           </motion.div>

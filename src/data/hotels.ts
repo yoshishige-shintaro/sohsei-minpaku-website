@@ -30,12 +30,12 @@ export const hotels: Hotel[] = [
     parking: true,
     features: [
       {
-        icon: "User",
+        icon: "Users",
         title: "最大9名まで宿泊可能",
         description: "ご家族やグループでもゆったりとお過ごしいただけます。",
       },
       {
-        icon: "SquareFootage",
+        icon: "LandPlot",
         title: "広々とした83㎡の空間",
         description: "一軒家タイプで、リビングも広々としています。",
       },

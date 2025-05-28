@@ -1,21 +1,21 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { Hotel } from '@/types/hotel';
-import Container from '@/components/ui/Container';
-import SectionTitle from '@/components/ui/SectionTitle';
-import { 
-  Home, 
-  Users, 
-  Car, 
-  Wifi, 
-  MapPin, 
-  SquareFootage,
+import Container from "@/components/ui/Container";
+import SectionTitle from "@/components/ui/SectionTitle";
+import { Hotel } from "@/types/hotel";
+import { motion } from "framer-motion";
+import {
   Bike,
-  Laptop,
+  Car,
   Hammer,
-  Thermometer
-} from 'lucide-react';
+  Home,
+  LandPlot,
+  Laptop,
+  MapPin,
+  Thermometer,
+  Users,
+  Wifi,
+} from "lucide-react";
 
 type Props = {
   hotel: Hotel;
@@ -29,11 +29,11 @@ const iconMap: Record<string, JSX.Element> = {
   Car: <Car size={24} />,
   Wifi: <Wifi size={24} />,
   MapPin: <MapPin size={24} />,
-  SquareFootage: <SquareFootage size={24} />,
+  LandPlot: <LandPlot size={24} />,
   Bike: <Bike size={24} />,
   Laptop: <Laptop size={24} />,
   Hammer: <Hammer size={24} />,
-  Thermometer: <Thermometer size={24} />
+  Thermometer: <Thermometer size={24} />,
 };
 
 const OverviewSection = ({ hotel, title }: Props) => {
@@ -77,20 +77,20 @@ const OverviewSection = ({ hotel, title }: Props) => {
               {hotel.name}について
             </h3>
             <p className="text-gray-700 mb-6">{hotel.description}</p>
-            
+
             <div className="grid grid-cols-2 gap-4">
               <div className="flex items-center">
                 <Users className="text-deep-blue mr-2" size={18} />
                 <span className="text-gray-700 text-sm">最大{hotel.maxGuests}名</span>
               </div>
               <div className="flex items-center">
-                <SquareFootage className="text-deep-blue mr-2" size={18} />
+                <LandPlot className="text-deep-blue mr-2" size={18} />
                 <span className="text-gray-700 text-sm">{hotel.size}㎡</span>
               </div>
               <div className="flex items-center">
                 <Car className="text-deep-blue mr-2" size={18} />
                 <span className="text-gray-700 text-sm">
-                  {hotel.parking ? '駐車場あり' : '駐車場なし'}
+                  {hotel.parking ? "駐車場あり" : "駐車場なし"}
                 </span>
               </div>
               <div className="flex items-center">
@@ -102,9 +102,7 @@ const OverviewSection = ({ hotel, title }: Props) => {
 
           {/* 右側: 特徴 */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-xl font-semibold mb-6 border-b border-gray-300 pb-2">
-              特徴
-            </h3>
+            <h3 className="text-xl font-semibold mb-6 border-b border-gray-300 pb-2">特徴</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {hotel.features.map((feature, index) => (
                 <motion.div
@@ -133,16 +131,10 @@ const OverviewSection = ({ hotel, title }: Props) => {
         >
           {/* 左側: 強み */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-xl font-semibold mb-4 text-deep-blue">
-              強み
-            </h3>
+            <h3 className="text-xl font-semibold mb-4 text-deep-blue">強み</h3>
             <ul className="space-y-2">
               {hotel.strengths.map((strength, index) => (
-                <motion.li
-                  key={index}
-                  variants={itemVariants}
-                  className="flex items-start"
-                >
+                <motion.li key={index} variants={itemVariants} className="flex items-start">
                   <span className="text-wakatake mr-2 mt-1">✓</span>
                   <span className="text-gray-700">{strength}</span>
                 </motion.li>
@@ -152,16 +144,10 @@ const OverviewSection = ({ hotel, title }: Props) => {
 
           {/* 右側: 弱み */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-xl font-semibold mb-4 text-deep-blue">
-              注意点
-            </h3>
+            <h3 className="text-xl font-semibold mb-4 text-deep-blue">注意点</h3>
             <ul className="space-y-2">
               {hotel.weaknesses.map((weakness, index) => (
-                <motion.li
-                  key={index}
-                  variants={itemVariants}
-                  className="flex items-start"
-                >
+                <motion.li key={index} variants={itemVariants} className="flex items-start">
                   <span className="text-gray-500 mr-2 mt-1">•</span>
                   <span className="text-gray-700">{weakness}</span>
                 </motion.li>

@@ -107,7 +107,7 @@ const ReviewsSection = ({ reviews, content }: Props) => {
                       <p className="text-sm text-gray-500">{review.date}</p>
                     </div>
                     <div className="text-sm text-wakatake">
-                      {review.hotel === 'kasai' ? '葛西ホテル' : '寿司アートホテル'}
+                      {/* {review.hotel === 'kasai' ? '葛西ホテル' : '寿司アートホテル'} */}
                     </div>
                   </div>
                 </div>

@@ -48,5 +48,5 @@ export type Review = {
   date: string;
   rating: number;
   text: string;
-  hotel: 'kasai' | 'sushi-art';
+  // hotel: 'kasai' | 'sushi-art';
 };
