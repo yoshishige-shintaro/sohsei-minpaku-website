@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import { Hotel } from '@/types/hotel';
-import { Locale } from '@/lib/i18n';
-import Container from '@/components/ui/Container';
-import { LinkButton } from '@/components/ui/Button';
-import { Check } from 'lucide-react';
+import { LinkButton } from "@/components/ui/Button";
+import Container from "@/components/ui/Container";
+import { Locale } from "@/lib/i18n";
+import { Hotel } from "@/types/hotel";
+import { motion } from "framer-motion";
+import { Check } from "lucide-react";
+import Image from "next/image";
 
 type Props = {
   hotel: Hotel;
@@ -20,12 +20,7 @@ type Props = {
   };
 };
 
-const HotelFeatureSection = ({
-  hotel,
-  locale,
-  isReversed = false,
-  content,
-}: Props) => {
+const HotelFeatureSection = ({ hotel, locale, isReversed = false, content }: Props) => {
   // アニメーションのバリアント
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -53,7 +48,7 @@ const HotelFeatureSection = ({
       <Container>
         <div
           className={`flex flex-col ${
-            isReversed ? 'md:flex-row-reverse' : 'md:flex-row'
+            isReversed ? "md:flex-row-reverse" : "md:flex-row"
           } gap-8 md:gap-12 items-center`}
         >
           {/* 画像部分 */}
@@ -83,37 +78,21 @@ const HotelFeatureSection = ({
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <motion.h2
-              variants={itemVariants}
-              className="text-3xl md:text-4xl font-bold mb-3"
-            >
+            <motion.h2 variants={itemVariants} className="text-3xl md:text-4xl font-bold mb-3">
               {content.title}
             </motion.h2>
-            <motion.p
-              variants={itemVariants}
-              className="text-lg text-gray-600 mb-6"
-            >
+            <motion.p variants={itemVariants} className="text-lg text-gray-600 mb-6">
               {content.subtitle}
             </motion.p>
-            <motion.p
-              variants={itemVariants}
-              className="text-gray-700 mb-6"
-            >
+            <motion.p variants={itemVariants} className="text-gray-700 mb-6">
               {content.description}
             </motion.p>
 
             {/* 特徴リスト */}
-            <motion.div
-              variants={containerVariants}
-              className="mb-8"
-            >
+            <motion.div variants={containerVariants} className="mb-8">
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {hotel.strengths.slice(0, 4).map((strength, index) => (
-                  <motion.li
-                    key={index}
-                    variants={itemVariants}
-                    className="flex items-start"
-                  >
+                  <motion.li key={index} variants={itemVariants} className="flex items-start">
                     <span className="text-wakatake mr-2 mt-1">
                       <Check size={16} />
                     </span>
@@ -125,10 +104,7 @@ const HotelFeatureSection = ({
 
             {/* ボタン */}
             <motion.div variants={itemVariants}>
-              <LinkButton
-                href={`/${locale}/${hotel.id}-hotel`}
-                variant="primary"
-              >
+              <LinkButton href={`/${locale}/${hotel.id}`} variant="primary">
                 {content.readMore}
               </LinkButton>
             </motion.div>

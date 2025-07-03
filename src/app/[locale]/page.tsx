@@ -48,6 +48,13 @@ export default async function HomePage({
         content={translations.home.sushiArtHotel}
       />
 
+      {/* 寿司アートホテル@一之江紹介 */}
+      <HotelFeatureSection
+        hotel={hotels[2]}
+        locale={locale}
+        content={translations.home.sushiArtHotelIchinoe}
+      />
+
       {/* レビューセクション */}
       <ReviewsSection
         reviews={allReviews}

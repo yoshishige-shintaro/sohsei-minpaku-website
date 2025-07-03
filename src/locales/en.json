@@ -6,6 +6,7 @@
       "home": "Home",
       "kasaiHotel": "Kasai Hotel",
       "sushiArtHotel": "Sushi Art Hotel",
+      "sushiArtHotelIchinoe": "Sushi Art Hotel @ Ichinoe",
       "area": "Local Area",
       "faq": "FAQ"
     },
@@ -31,6 +32,12 @@
       "title": "Sushi Art Hotel",
       "subtitle": "Unique space designed by Japan Art University artists",
       "description": "Enjoy the unique sushi-themed art created by Japan Art University artists. Featuring carefully selected interior including Eames dining table, and a projector for movie viewing.",
+      "readMore": "readMore"
+    },
+    "sushiArtHotelIchinoe": {
+      "title": "Sushi Art Hotel @ Ichinoe",
+      "subtitle": "Up to 8 guests / Entire place / 9 min to Ichinoe Station / Direct to Shinjuku & Akihabara",
+      "description": "A private accommodation for one group in the charming downtown Ichinoe area, offering a comfortable and relaxing Tokyo sightseeing experience. Just 15 minutes by taxi to TeamLab and 15 minutes by taxi to Tokyo Disney Resort (TDR).",
       "readMore": "readMore"
     },
     "reviews": {
@@ -142,31 +149,31 @@
         "id": "station-distance",
         "category": "access",
         "question": "How far are the nearest stations?",
-        "answer": "【Kasai Hotel】13-minute walk from Funabori Station\n【Sushi Art Hotel】13-minute walk from Koiwa Station\n\nBoth stations provide direct access to Shinjuku and Akihabara via the Shinjuku Line. The station areas have supermarkets, convenience stores, and restaurants."
+        "answer": "【Kasai Hotel】13-minute walk from Funabori Station\n【Sushi Art Hotel】13-minute walk from Koiwa Station\n【Sushi Art Hotel @ Ichinoe】9-minute walk from Ichinoe Station\n\nAll stations provide direct access to Shinjuku and Akihabara via the Toei Shinjuku Line. The station areas have supermarkets, convenience stores, and restaurants."
       },
       {
         "id": "parking",
         "category": "access",
         "question": "Is parking available?",
-        "answer": "【Kasai Hotel】Free parking for one car\n【Sushi Art Hotel】Paid parking available\n\nPlease let us know in advance if you need parking. For Sushi Art Hotel parking fees, we will provide details when you inquire."
+        "answer": "【Kasai Hotel】Free parking for one car\n【Sushi Art Hotel】Paid parking available\n【Sushi Art Hotel @ Ichinoe】No parking available\n\nPlease let us know in advance if you need parking. For Sushi Art Hotel parking fees, we will provide details when you inquire. For Sushi Art Hotel @ Ichinoe, please use nearby coin parking."
       },
       {
         "id": "teamlab-disney",
         "category": "access",
         "question": "How do I get to TeamLab and Disneyland?",
-        "answer": "【TeamLab】\n・About 15 minutes by taxi from Kasai Hotel\n・About 20 minutes by taxi from Sushi Art Hotel\n\n【Tokyo Disney Resort】\n・About 15 minutes by taxi from Kasai Hotel\n・About 25 minutes by taxi from Sushi Art Hotel\n\nWe will also provide public transportation directions during check-in."
+        "answer": "【TeamLab】\n・About 15 minutes by taxi from Kasai Hotel\n・About 20 minutes by taxi from Sushi Art Hotel\n・About 15 minutes by taxi from Sushi Art Hotel @ Ichinoe\n\n【Tokyo Disney Resort】\n・About 15 minutes by taxi from Kasai Hotel\n・About 25 minutes by taxi from Sushi Art Hotel\n・About 15 minutes by taxi from Sushi Art Hotel @ Ichinoe\n\nWe will also provide public transportation directions during check-in."
       },
       {
         "id": "airport-access",
         "category": "access",
         "question": "How do I get from the airports?",
-        "answer": "【From Haneda Airport】\n・50 minutes to Funabori Station, 55 minutes to Koiwa Station\n・40 minutes by direct bus to Kasai Station, then 10 minutes by taxi\n\n【From Narita Airport】\n・70 minutes to both Funabori and Koiwa Stations\n・60 minutes by direct bus to Kasai Station, then 10 minutes by taxi\n\nWhen you have lots of luggage, taking a taxi from Kasai Station is convenient."
+        "answer": "【From Haneda Airport】\n・50 minutes to Funabori Station, 55 minutes to Koiwa Station, 50 minutes to Ichinoe Station\n・40 minutes by direct bus to Kasai Station, then 10 minutes by taxi\n\n【From Narita Airport】\n・70 minutes to Funabori, Koiwa, and Ichinoe Stations\n・60 minutes by direct bus to Kasai Station, then 10 minutes by taxi\n\nWhen you have lots of luggage, taking a taxi from Kasai Station is convenient."
       },
       {
         "id": "pricing",
         "category": "pricing",
         "question": "What are the accommodation rates?",
-        "answer": "Rates vary by season and day of the week. For detailed pricing, please check each listing on Airbnb.\n\n【Kasai Hotel】Up to 9 guests\n【Sushi Art Hotel】Up to 5 guests\n\nRates include basic facilities and amenities."
+        "answer": "Rates vary by season and day of the week. For detailed pricing, please check each listing on Airbnb.\n\n【Kasai Hotel】Up to 9 guests\n【Sushi Art Hotel】Up to 5 guests\n【Sushi Art Hotel @ Ichinoe】Up to 8 guests\n\nRates include basic facilities and amenities."
       },
       {
         "id": "additional-fees",
@@ -196,13 +203,13 @@
         "id": "guest-limit",
         "category": "rules",
         "question": "Are there guest limits?",
-        "answer": "【Kasai Hotel】Maximum 9 guests\n【Sushi Art Hotel】Maximum 5 guests\n\nOnly registered guests may stay or visit. If occupancy exceeds the reservation, additional fees or eviction may apply."
+        "answer": "【Kasai Hotel】Maximum 9 guests\n【Sushi Art Hotel】Maximum 5 guests\n【Sushi Art Hotel @ Ichinoe】Maximum 8 guests\n\nOnly registered guests may stay or visit. If occupancy exceeds the reservation, additional fees or eviction may apply."
       },
       {
         "id": "nearby-facilities",
         "category": "other",
         "question": "What facilities are nearby?",
-        "answer": "Both properties have excellent facilities near the stations:\n\n・Supermarkets\n・Convenience stores\n・100-yen shops (Seria, Can★Do, Daiso)\n・Many restaurants and izakaya\n・Pharmacies and clinics\n\nEverything you need for daily life is within walking distance."
+        "answer": "All properties have excellent facilities near the stations:\n\n・Supermarkets\n・Convenience stores\n・100-yen shops (Seria, Can★Do, Daiso)\n・Many restaurants and izakaya\n・Pharmacies and clinics\n\n【Sushi Art Hotel @ Ichinoe Features】\n・Ichinoe area has a calm downtown atmosphere\n・15-minute walk to Shunkaen BONSAI Museum\n\nEverything you need for daily life is within walking distance."
       },
       {
         "id": "emergency",
@@ -215,6 +222,12 @@
         "category": "other",
         "question": "What amenities are provided?",
         "answer": "We provide the following amenities:\n\n【Basic Amenities】\n・Bath towels, face towels\n・Shampoo, conditioner, body wash\n・Hair dryer\n・Wi-Fi\n\n【Kitchen Items】\n・Complete dish set, cooking utensils, microwave, kettle\n\n【Please Bring】\n・Toothbrush, razor\n・Other personal toiletries"
+      },
+      {
+        "id": "ichinoe-special-features",
+        "category": "other",
+        "question": "What are the special features of Sushi Art Hotel @ Ichinoe?",
+        "answer": "Sushi Art Hotel @ Ichinoe is a private 2LDK accommodation in the calm downtown Ichinoe area.\n\n【Main Features】\n・Accommodates up to 8 guests in 48㎡ space\n・Projector (popin aladdin) for movie viewing\n・Fully automatic drum washer/dryer\n・Remote work space available\n・Charming 1970s building with character\n\n【Access】\n・9-minute walk from Ichinoe Station\n・15 minutes by taxi to TeamLab\n・15 minutes by taxi to Tokyo Disney Resort\n・15-minute walk to Shunkaen BONSAI Museum\n\nEnjoy the downtown atmosphere while staying comfortably."
       }
     ]
   },

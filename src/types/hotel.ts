@@ -1,6 +1,6 @@
 // ホテル情報の型定義
 export type Hotel = {
-  id: 'kasai' | 'sushi-art';
+  id: "kasai-hotel" | "sushi-art-hotel" | "sushi-art-hotel-ichinoe";
   name: string;
   subtitle: string;
   description: string;
@@ -48,5 +48,5 @@ export type Review = {
   date: string;
   rating: number;
   text: string;
-  // hotel: 'kasai' | 'sushi-art';
+  // hotel: 'kasai' | 'sushi-art' | 'sushi-art-hotel-ichinoe';
 };

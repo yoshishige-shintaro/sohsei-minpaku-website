@@ -2,7 +2,7 @@ import { Hotel } from "@/types/hotel";
 
 export const hotels: Hotel[] = [
   {
-    id: "kasai",
+    id: "kasai-hotel",
     name: "葛西ホテル",
     subtitle: "広々とした空間で TeamLab やディズニーへのアクセスも抜群",
     description:
@@ -111,7 +111,7 @@ export const hotels: Hotel[] = [
     airbnbUrl: "https://www.airbnb.com/rooms/example-kasai",
   },
   {
-    id: "sushi-art",
+    id: "sushi-art-hotel",
     name: "寿司アートホテル",
     subtitle: "日本藝術大学アーティストによる独自の空間",
     description:
@@ -217,5 +217,124 @@ export const hotels: Hotel[] = [
       },
     ],
     airbnbUrl: "https://www.airbnb.com/rooms/example-sushi-art",
+  },
+  {
+    id: "sushi-art-hotel-ichinoe",
+    name: "寿司アートホテル@一之江",
+    subtitle: "最大8名／まるまる貸切／一之江駅9分／新宿・秋葉原直通",
+    description:
+      "東京の落ち着いた雰囲気の魅力的な下町である一之江エリアで、快適な東京観光をゆったりと楽しめる1グループまるまる貸切の宿泊施設です。TeamLabまでタクシーで約15分、Tokyo Disney Resort（TDR）までもタクシーで約15分の好アクセスです。",
+    strengths: [
+      "最大8名宿泊可能な48㎡の2LDK貸切宿泊施設",
+      "一之江駅より徒歩9分の好立地",
+      "TeamLabまでタクシーで約15分",
+      "Tokyo Disney Resort（TDR）までタクシーで約15分",
+      "春花園BONSAI美術館まで徒歩15分",
+      "リモートワークスペース完備",
+      "プロジェクター（popin aladdin）完備",
+      "全自動ドラム式洗濯乾燥機完備",
+    ],
+    weaknesses: [
+      "1970年代築の古い建物で多少の劣化あり",
+      "冬場は室内でも寒さを感じる可能性",
+      "駐車場なし",
+      "チェックアウト後の荷物預かり未対応",
+    ],
+    price: {
+      weekday: 20000,
+      weekend: 28000,
+    },
+    maxGuests: 8,
+    size: 48,
+    parking: false,
+    features: [
+      {
+        icon: "Users",
+        title: "最大8名まで宿泊可能",
+        description: "ご家族やグループでもゆったりとお過ごしいただけます。",
+      },
+      {
+        icon: "LandPlot",
+        title: "48㎡の2LDK空間",
+        description: "キッチン、リビング、寝室2つ、バスルーム完備です。",
+      },
+      {
+        icon: "MapPin",
+        title: "一之江駅徒歩9分",
+        description: "都営新宿線で新宿・秋葉原直通のアクセス抜群です。",
+      },
+      {
+        icon: "Laptop",
+        title: "リモートワークスペース",
+        description: "仕事をしながらの滞在も快適です。",
+      },
+    ],
+    amenities: [
+      "Wi-Fi",
+      "エアコン",
+      "プロジェクター（popin aladdin）",
+      "冷蔵庫",
+      "電子レンジ",
+      "IHクッキングヒーター",
+      "全自動ドラム式洗濯乾燥機",
+      "バスタオル・フェイスタオル",
+      "シャンプー・コンディショナー・ボディソープ",
+      "ドライヤー",
+    ],
+    images: [
+      { src: "/images/sushi-art-hotel-ichinoe/exterior.jpg", alt: "寿司アートホテル@一之江外観" },
+      { src: "/images/sushi-art-hotel-ichinoe/living.jpg", alt: "リビングルーム" },
+      { src: "/images/sushi-art-hotel-ichinoe/bedroom1.jpg", alt: "寝室1" },
+      { src: "/images/sushi-art-hotel-ichinoe/bedroom2.jpg", alt: "寝室2" },
+      { src: "/images/sushi-art-hotel-ichinoe/kitchen.jpg", alt: "キッチン" },
+      { src: "/images/sushi-art-hotel-ichinoe/bathroom.jpg", alt: "浴室" },
+    ],
+    location: {
+      address: "東京都江戸川区一之江",
+      mapUrl: "https://maps.google.com/maps?q=東京都江戸川区一之江",
+      nearbySpots: [
+        { name: "チームラボプラネッツ", distance: "約6km", transportMethod: "タクシーで15分" },
+        { name: "東京ディズニーリゾート", distance: "約7km", transportMethod: "タクシーで15分" },
+        { name: "春花園BONSAI美術館", distance: "約1.2km", transportMethod: "徒歩15分" },
+        { name: "一之江駅", distance: "約700m", transportMethod: "徒歩9分" },
+      ],
+    },
+    rules: [
+      "室内は禁煙です",
+      "20時以降は騒音にご注意ください",
+      "ペット不可",
+      "パーティー・イベント不可",
+      "チェックイン: 16:00〜20:00",
+      "チェックアウト: 〜10:00",
+      "予約された方以外のご滞在・ご訪問は禁止",
+    ],
+    reviews: [
+      {
+        author: "萩野さん",
+        date: "2025年5月",
+        rating: 5,
+        text: "外観により築年数を感じることはあるが、建物内の清潔さ、装備、コストパフォーマンスを考えると満足度が高い部屋だったと思う。観光においては、都内東部に位置するため、移動時間等を計算しておく必要はある。総合的な満足度は高かった。また利用したい。",
+      },
+      {
+        author: "Tyler",
+        date: "2025年5月",
+        rating: 5,
+        text: "とても穏やかな街にある素晴らしい場所です。とても快適で清潔です。",
+      },
+      {
+        author: "Jovany",
+        date: "2025年5月",
+        rating: 5,
+        text: "これまで滞在した中で最高のスポット",
+      },
+      {
+        author: "Nely",
+        date: "2025年5月",
+        rating: 5,
+        text: "とても素敵な場所で、清潔で静かで、とても気に入り、安心して過ごせました！",
+      },
+    ],
+    airbnbUrl:
+      "https://www.airbnb.jp/rooms/1407043019827610488?_set_bev_on_new_domain=1738134213_EAOWEwNTg4NGRhYj&source_impression_id=p3_1751526188_P3IYDpGMVPvUlunL",
   },
 ];

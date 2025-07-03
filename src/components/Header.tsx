@@ -18,6 +18,7 @@ type Props = {
     home: string;
     kasaiHotel: string;
     sushiArtHotel: string;
+    sushiArtHotelIchinoe: string;
     area: string;
     faq: string;
   };
@@ -31,6 +32,7 @@ export const Header = ({ locale, nav }: Props) => {
     { href: `/${locale}`, label: nav.home },
     { href: `/${locale}/kasai-hotel`, label: nav.kasaiHotel },
     { href: `/${locale}/sushi-art-hotel`, label: nav.sushiArtHotel },
+    { href: `/${locale}/sushi-art-hotel-ichinoe`, label: nav.sushiArtHotelIchinoe },
     // { href: `/${locale}/area`, label: nav.area },
     { href: `/${locale}/faq`, label: nav.faq },
   ];

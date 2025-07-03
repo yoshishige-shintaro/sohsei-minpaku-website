@@ -10,13 +10,13 @@ import { ArrowRight } from 'lucide-react';
 import { Locale } from '@/lib/i18n';
 
 type Props = {
-  hotel: Hotel;
+  hotels: Hotel[];
   locale: Locale;
   title: string;
   readMore: string;
 };
 
-const OtherHotelSection = ({ hotel, locale, title, readMore }: Props) => {
+const OtherHotelSection = ({ hotels, locale, title, readMore }: Props) => {
   // アニメーションのバリアント
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -50,6 +50,14 @@ const OtherHotelSection = ({ hotel, locale, title, readMore }: Props) => {
     },
   };
 
+  // ホテルIDからページパスを生成する関数
+  const getHotelPath = (hotelId: string) => {
+    if (hotelId === 'sushi-art-hotel-ichinoe') {
+      return `/${locale}/sushi-art-hotel-ichinoe`;
+    }
+    return `/${locale}/${hotelId}`;
+  };
+
   return (
     <section className="py-16 md:py-24 bg-white">
       <Container>
@@ -60,74 +68,82 @@ const OtherHotelSection = ({ hotel, locale, title, readMore }: Props) => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="mt-10 max-w-4xl mx-auto bg-kinari rounded-lg overflow-hidden shadow-md"
+          className="mt-10 space-y-8"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2">
-            {/* 画像 */}
+          {hotels.map((hotel, index) => (
             <motion.div
-              variants={imageVariants}
-              className="relative h-64 md:h-full overflow-hidden"
+              key={hotel.id}
+              variants={itemVariants}
+              className="max-w-4xl mx-auto bg-kinari rounded-lg overflow-hidden shadow-md"
             >
-              <Image
-                src={hotel.images[0].src}
-                alt={hotel.name}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            </motion.div>
-
-            {/* テキスト */}
-            <motion.div
-              variants={containerVariants}
-              className="p-6 md:p-8"
-            >
-              <motion.h3
-                variants={itemVariants}
-                className="text-2xl font-bold mb-3"
-              >
-                {hotel.name}
-              </motion.h3>
-              <motion.p
-                variants={itemVariants}
-                className="text-gray-600 mb-4"
-              >
-                {hotel.subtitle}
-              </motion.p>
-              <motion.div
-                variants={itemVariants}
-                className="flex flex-wrap gap-4 mb-4"
-              >
-                <div className="bg-deep-blue bg-opacity-10 text-deep-blue text-sm px-3 py-1 rounded-full">
-                  最大{hotel.maxGuests}名
-                </div>
-                <div className="bg-deep-blue bg-opacity-10 text-deep-blue text-sm px-3 py-1 rounded-full">
-                  {hotel.size}㎡
-                </div>
-                {hotel.parking && (
-                  <div className="bg-deep-blue bg-opacity-10 text-deep-blue text-sm px-3 py-1 rounded-full">
-                    駐車場あり
-                  </div>
-                )}
-              </motion.div>
-              <motion.p
-                variants={itemVariants}
-                className="text-gray-700 mb-6"
-              >
-                {hotel.description}
-              </motion.p>
-              <motion.div variants={itemVariants}>
-                <LinkButton
-                  href={`/${locale}/${hotel.id}-hotel`}
-                  variant="primary"
-                  className="inline-flex items-center"
+              <div className={`grid grid-cols-1 md:grid-cols-2 ${index % 2 === 1 ? 'md:grid-flow-col-dense' : ''}`}>
+                {/* 画像 */}
+                <motion.div
+                  variants={imageVariants}
+                  className={`relative h-64 md:h-full overflow-hidden ${index % 2 === 1 ? 'md:col-start-2' : ''}`}
                 >
-                  {readMore}
-                  <ArrowRight size={18} className="ml-2" />
-                </LinkButton>
-              </motion.div>
+                  <Image
+                    src={hotel.images[0].src}
+                    alt={hotel.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </motion.div>
+
+                {/* テキスト */}
+                <motion.div
+                  variants={containerVariants}
+                  className={`p-6 md:p-8 ${index % 2 === 1 ? 'md:col-start-1' : ''}`}
+                >
+                  <motion.h3
+                    variants={itemVariants}
+                    className="text-2xl font-bold mb-3"
+                  >
+                    {hotel.name}
+                  </motion.h3>
+                  <motion.p
+                    variants={itemVariants}
+                    className="text-gray-600 mb-4"
+                  >
+                    {hotel.subtitle}
+                  </motion.p>
+                  <motion.div
+                    variants={itemVariants}
+                    className="flex flex-wrap gap-4 mb-4"
+                  >
+                    <div className="bg-deep-blue bg-opacity-10 text-deep-blue text-sm px-3 py-1 rounded-full">
+                      最大{hotel.maxGuests}名
+                    </div>
+                    <div className="bg-deep-blue bg-opacity-10 text-deep-blue text-sm px-3 py-1 rounded-full">
+                      {hotel.size}㎡
+                    </div>
+                    {hotel.parking && (
+                      <div className="bg-deep-blue bg-opacity-10 text-deep-blue text-sm px-3 py-1 rounded-full">
+                        駐車場あり
+                      </div>
+                    )}
+                  </motion.div>
+                  <motion.p
+                    variants={itemVariants}
+                    className="text-gray-700 mb-6"
+                  >
+                    {hotel.description}
+                  </motion.p>
+                  <motion.div variants={itemVariants}>
+                    <LinkButton
+                      href={getHotelPath(hotel.id)}
+                      variant="primary"
+                      className="inline-flex items-center"
+                    >
+                      {readMore}
+                      <ArrowRight size={18} className="ml-2" />
+                    </LinkButton>
+                  </motion.div>
+                </motion.div>
+              </div>
             </motion.div>
-          </div>
+          ))}
         </motion.div>
       </Container>
     </section>

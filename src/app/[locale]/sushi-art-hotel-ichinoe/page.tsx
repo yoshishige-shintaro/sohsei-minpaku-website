@@ -15,44 +15,48 @@ export async function generateMetadata({ params }: { params: { locale: Locale } 
   const translations = await getTranslations(params.locale);
 
   return {
-    title: "葛西ホテル",
+    title: "寿司アートホテル@一之江",
     description:
-      "最大9名宿泊可能な広々とした一軒家。TeamLabやディズニーへのアクセスも抜群の葛西ホテル。",
+      "最大8名宿泊可能な48㎡の2LDK貸切宿泊施設。TeamLabやディズニーへのアクセスも抜群の寿司アートホテル@一之江。",
   };
 }
 
-export default async function KasaiHotelPage({ params }: { params: { locale: Locale } }) {
+export default async function SushiArtHotelIchinoePage({ params }: { params: { locale: Locale } }) {
   const locale = params.locale;
   const translations = await getTranslations(locale);
 
-  // 葛西ホテルの情報を取得
-  const kasaiHotel = hotels.find((hotel) => hotel.id === "kasai-hotel");
+  // 寿司アートホテル@一之江の情報を取得
+  const sushiArtHotelIchinoe = hotels.find((hotel) => hotel.id === "sushi-art-hotel-ichinoe");
   // 現在表示中の施設以外のホテル情報を取得
-  const otherHotels = hotels.filter((hotel) => hotel.id !== "kasai-hotel");
+  const otherHotels = hotels.filter((hotel) => hotel.id !== "sushi-art-hotel-ichinoe");
 
   // ホテルデータが見つからない場合は例外処理
-  if (!kasaiHotel) {
+  if (!sushiArtHotelIchinoe) {
     throw new Error("ホテルデータが見つかりません");
   }
 
   return (
     <>
       {/* ヒーローセクション */}
-      <HotelHero hotel={kasaiHotel} title={kasaiHotel.name} subtitle={kasaiHotel.subtitle} />
+      <HotelHero
+        hotel={sushiArtHotelIchinoe}
+        title={sushiArtHotelIchinoe.name}
+        subtitle={sushiArtHotelIchinoe.subtitle}
+      />
 
       {/* 写真ギャラリー */}
       <GallerySection
-        hotel={kasaiHotel}
+        hotel={sushiArtHotelIchinoe}
         title={translations.hotel.rooms}
         viewGallery={translations.common.button.viewGallery}
       />
 
       {/* 施設概要＋特徴 */}
-      <OverviewSection hotel={kasaiHotel} title={translations.hotel.overview} />
+      <OverviewSection hotel={sushiArtHotelIchinoe} title={translations.hotel.overview} />
 
       {/* 料金セクション */}
       <PriceSection
-        hotel={kasaiHotel}
+        hotel={sushiArtHotelIchinoe}
         title={translations.hotel.price}
         weekday={translations.hotel.weekday}
         weekend={translations.hotel.weekend}
@@ -62,16 +66,16 @@ export default async function KasaiHotelPage({ params }: { params: { locale: Loc
       />
 
       {/* 部屋・設備詳細 */}
-      <AmenitiesSection hotel={kasaiHotel} title={translations.hotel.rooms} />
+      <AmenitiesSection hotel={sushiArtHotelIchinoe} title={translations.hotel.rooms} />
 
       {/* レビュー */}
-      <ReviewsSection reviews={kasaiHotel.reviews} content={translations.home.reviews} />
+      <ReviewsSection reviews={sushiArtHotelIchinoe.reviews} content={translations.home.reviews} />
 
       {/* アクセス・周辺情報 */}
-      <AccessSection hotel={kasaiHotel} title={translations.hotel.access} />
+      <AccessSection hotel={sushiArtHotelIchinoe} title={translations.hotel.access} />
 
       {/* ハウスルール */}
-      <RulesSection hotel={kasaiHotel} title={translations.hotel.rules} />
+      <RulesSection hotel={sushiArtHotelIchinoe} title={translations.hotel.rules} />
 
       {/* 他の施設紹介 */}
       <OtherHotelSection
